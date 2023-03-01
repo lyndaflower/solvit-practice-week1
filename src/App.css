@@ -3,6 +3,19 @@ box-sizing: border-box;
 }
 .app-container{
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  flex-direction: row;
+}
+.search-input{
+  flex: 50%;
+}
+.output-section{
+  flex:50%;
+  text-align: start;
+  margin-left: 100px;
+}
+
+@media (max-width: 800px) {
+  .app-container {
+    flex-direction: column;
+  }
 }

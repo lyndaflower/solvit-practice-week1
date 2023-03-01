@@ -42,9 +42,13 @@ class App extends Component {
     return this.state.isLoading
       ? <h1 className="loading">is loading.......</h1>
       : <div className="app-container">
+        <div className="search-input">
+        <h1>Search section</h1>
           <input type="search" onChange={this.handlerEventInput} />
+        </div>
 
-          <p>
+          <div className="output-section">
+            <h1>search out-put</h1>
             {searchInputDisplay.map(list => {
               return (
                 <p key={list.dt}>
@@ -52,7 +56,7 @@ class App extends Component {
                 </p>
               );
             })}
-          </p>
+          </div>
         </div>;
   }
 }
