@@ -40,7 +40,7 @@ class App extends Component {
     });
 
     return this.state.isLoading
-      ? <h1 className="loading">is loading.......</h1>
+      ? <h1 className="loading"></h1>
       : <div className="app-container">
         <div className="search-input">
         <h1>Search section</h1>
