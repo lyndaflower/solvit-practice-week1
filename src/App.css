@@ -1,17 +1,24 @@
 body{
 box-sizing: border-box;
+background-color: #ffb366;
 }
 .app-container{
   display: flex;
   flex-direction: row;
 }
 .search-input{
-  flex: 50%;
+  flex: 30%;
+  font-size: 12px;
+  background-color: aliceblue;
+ padding: 20px;
 }
 .output-section{
   flex:50%;
+  width: 100%;
   text-align: start;
-  margin-left: 100px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 @media (max-width: 800px) {
